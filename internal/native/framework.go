@@ -572,7 +572,7 @@ func getMaaFrameworkLibrary() string {
 	switch runtime.GOOS {
 	case "darwin":
 		return "libMaaFramework.dylib"
-	case "linux":
+	case "linux", "android":
 		return "libMaaFramework.so"
 	case "windows":
 		return "MaaFramework.dll"
